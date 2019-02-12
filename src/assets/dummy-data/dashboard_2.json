@@ -1,0 +1,25 @@
+[{
+  "periodo": 2019,
+  "level": "Secundaria",
+  "male": 156,
+  "female": 185,
+  "total": 123
+}, {
+  "periodo": 2019,
+  "level": "Primaria",
+  "male": 151,
+  "female": 187,
+  "total": 135
+}, {
+  "periodo": 2019,
+  "level": "Secundaria",
+  "male": 136,
+  "female": 180,
+  "total": 185
+}, {
+  "periodo": 2019,
+  "level": "Licenciatura",
+  "male": 147,
+  "female": 161,
+  "total": 146
+}]

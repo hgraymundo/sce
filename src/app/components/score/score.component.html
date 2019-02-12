@@ -1,0 +1,138 @@
+<div class="row">
+  <div class="col-md-12 mx-auto" style="padding 0px;">
+    <div class="card">
+      <div class="card-header">
+        <nav class="navbar navbar-table">
+          <a class="navbar-brand">{{title}}</a>
+        </nav>
+      </div>
+      <div class="content_search">
+        <div class="row">
+          <div class="col-md-7">
+            <form>
+              <div class="form-group row content-filter">
+                <label for="" class="col-sm-2 col-form-label">Nivel</label>
+                <div class="col-sm-5 filters">
+                  <select class="form-control form-control-sm custom-select">
+                    <option>Selecciona una opción</option>
+                    <option>Secundaria</option>
+                    <option>Bachillerato</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="" class="col-sm-2 col-form-label">Grado</label>
+                <div class="col-sm-5 filters">
+                  <select class="form-control form-control-sm custom-select">
+                    <option>Selecciona una opción</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="" class="col-sm-2 col-form-label">Grupo</label>
+                <div class="col-sm-5 filters">
+                  <select class="form-control form-control-sm custom-select">
+                    <option>Selecciona una opción</option>
+                    <option>A</option>
+                    <option>B</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row" style="margin:0px; padding: 0px;">
+                <div class="col-sm-7 filters ">
+                  <button type="submit" class="btn btn-primary btn-lg btn-block btn-filters"><i class="fas fa-filter"></i> Aplicar filtros</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <table  class="table table-bordered table-striped  table-sm">
+          <tr class="text-center tr-title-score">
+            <th rowspan="2" class="th-score">No. Control</th>
+            <th rowspan="2" class="text-justify">Nombre</th>
+            <th colspan="3" class="">Faltas</th>
+            <th colspan="3" class="">Calificación Parcial</th>
+            <th rowspan="2" class="">Promedio</th>
+            <th rowspan="2" class="">Calificación Final</th>
+            <th rowspan="2" class="">Opc.</th>
+          </tr>
+          <tr class="text-center tr-title-score">
+            <th class="text-center">P1</th>
+            <th class="text-center">P2</th>
+            <th class="text-center">EF</th>
+            <th class="text-center">I</th>
+            <th class="text-center">II</th>
+            <th class="text-center">III</th>
+          </tr>
+          <tr class="text-center tr-result-score" *ngFor="let s of student |filter: filter | paginate: {  itemsPerPage: 10, currentPage: p }">
+              <td>{{ s.uuid }}</td>
+              <td> {{ s.first_name}} {{ s.last_name }} {{ s.mlast_name }}</td>
+              <td>
+                <input class="input-score" type="text" name="" value="2">
+              </td>
+              <td>
+                <input  class="input-score" type="text" name="" value="2">
+              </td>
+              <td>
+                <input class="input-score" type="text" name="" value="2">
+              </td>
+              <td>
+                <input class="input-score input-score-disable" readonly type="text" name="" value="2">
+              </td>
+              <td>
+                <input class="input-score input-score-enabe" type="text" name="" value="2">
+              </td>
+              <td>
+                <input class="input-score" type="text" name="" value="">
+              </td>
+              <td>3</td>
+              <td>3</td>
+              <td class="options text-center"><i class="fas fa-save"></i></td>
+          </tr>
+
+          <!-- <thead>
+            <tr class="d-flex">
+              <th class="col-3">Nombre</th>
+              <th class="col-3">A. Paterno</th>
+              <th class="col-3">A. Materno</th>
+              <th class="col-2">Tipo</th>
+              <th class="col-1">Opciones</th>
+            </tr>
+          </thead> -->
+          <!-- <tbody>
+            <tr class="d-flex" *ngFor="let s of personal |filter: filter | paginate: {  itemsPerPage: 10, currentPage: p }">
+              <td class="col-3">{{ s.first_name }}</td>
+              <td class="col-3">{{ s.last_name }}</td>
+              <td class="col-3">{{ s.mlast_name }}</td>
+              <td class="col-2">{{ s.type }}</td>
+              <td class="col-1 options">
+                <a  style="padding-right: 7px;" [routerLink]="['/human-resource/view']"><i class="fas fa-search-plus"></i></a>
+                <a style="padding-right: 7px;" [routerLink]="['/human-resource/edit']"><i class="fas fa-edit"></i> </a>
+                <a href="#"><i class="fas fa-trash-alt"></i></a>
+              </td>
+            </tr>
+          </tbody> -->
+        </table>
+      </div>
+      <div class="card-footer text-muted pagination justify-content-end">
+        <pagination-controls
+                              (pageChange)="p = $event"
+                              maxSize="20"
+                              directionLinks="true"
+                              autoHide="true"
+                              responsive="true"
+                              previousLabel="Anterior"
+                              nextLabel="Siguiente"
+                              screenReaderPaginationLabel="Paginación"
+                              screenReaderPageLabel="Página"
+                              screenReaderCurrentLabel="Página">
+        </pagination-controls>
+      </div>
+    </div>
+  </div>
+</div>

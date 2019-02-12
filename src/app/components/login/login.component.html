@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-md-5 mx-auto">
+    <div class="card content">
+      <div class="card-header">
+        <span class="title">
+          Ingresar al sistema
+        </span>
+      </div>
+      <div class="card-body">
+        <form class="form" method="post"  action="/login" role="form" autocomplete="off">
+          <label for="" class="label-form"> Usuario: </label>
+          <div class="form-group">
+            <input type="text" name="username" required placeholder="usuario@dominio.com" class="form-control form-control-lg rounded-0">
+          </div>
+          <label for="" class="label-form"> Contraseña: </label><span class="lost-password"><a href="/recover-password">¿Perdiste tu contraseña?</a></span>
+          <div class="form-group">
+            <input type="password" name="password" required placeholder="Contraseña" class="form-control form-control-lg rounded-0">
+          </div>
+          <div class="col-md-12 content-button">
+            <button type="submit" class="btn btn-success btn-lg btn-block">Ingresar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

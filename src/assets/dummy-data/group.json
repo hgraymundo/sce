@@ -1,0 +1,71 @@
+[{
+  "uuid": "2c55281e-868d-4a33-bc13-f5fe067fe54d",
+  "grade": 3,
+  "group": "A",
+  "level": "Bachillerato",
+  "turn": "Matutino",
+  "periodo": 2019
+}, {
+  "uuid": "6a53aa87-e9a4-4d8d-9142-f92de46433f9",
+  "grade": 5,
+  "group": "A",
+  "level": "Bachillerato",
+  "turn": "Matutino",
+  "periodo": 2019
+}, {
+  "uuid": "feb548c4-19e5-49e8-b086-12d2b490f9d8",
+  "grade": 3,
+  "group": "B",
+  "level": "Secundaría",
+  "turn": "Vespertino",
+  "periodo": 2019
+}, {
+  "uuid": "f6d1c5aa-4b3c-45e8-bb6d-80b0f58afd08",
+  "grade": 1,
+  "group": "A",
+  "level": "Primaria",
+  "turn": "Matutino",
+  "periodo": 2019
+}, {
+  "uuid": "814b67b1-6a3d-48df-9c44-bf4877902e94",
+  "grade": 3,
+  "group": "B",
+  "level": "Secundaría",
+  "turn": "Matutino",
+  "periodo": 2019
+}, {
+  "uuid": "0b9a3050-0737-40c8-a755-06136b53e2d9",
+  "grade": 1,
+  "group": "B",
+  "level": "Primaria",
+  "turn": "Matutino",
+  "periodo": 2019
+}, {
+  "uuid": "a8571cf8-2df5-4912-9a12-9affe3cb70b3",
+  "grade": 3,
+  "group": "A",
+  "level": "Primaria",
+  "turn": "Sabatino",
+  "periodo": 2019
+}, {
+  "uuid": "936b5fb5-3d4b-4617-a7fe-08835586f9a5",
+  "grade": 2,
+  "group": "B",
+  "level": "Bachillerato",
+  "turn": "Vespertino",
+  "periodo": 2019
+}, {
+  "uuid": "54c743f7-a5bd-4e39-9572-9d1a09b89781",
+  "grade": 3,
+  "group": "A",
+  "level": "Bachillerato",
+  "turn": "Vespertino",
+  "periodo": 2019
+}, {
+  "uuid": "4ad2b016-3d6c-44f3-8144-f94c301bf8ad",
+  "grade": 2,
+  "group": "A",
+  "level": "Primaria",
+  "turn": "Matutino",
+  "periodo": 2019
+}]

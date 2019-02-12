@@ -1,0 +1,57 @@
+<div class="row">
+  <div class="col-md-12 mx-auto" style="padding 0px;">
+    <div class="card">
+      <div class="card-header">
+        <nav class="navbar navbar-table">
+          <a class="navbar-brand">{{title}}</a>
+          <a class="btn my-2 my-sm-0 btn-new" href="#"><i class="fas fa-plus-square"></i> Nuevo ciclo escolar</a>
+        </nav>
+      </div>
+      <div class="content_search">
+        <form class="form-inline input-group pull-right col-md-12 form-search">
+          <input type="text" [(ngModel)]="filter" name="search" class="form-control input-search form-control-sm search" placeholder=" Buscar ciclo..." >
+        </form>
+      </div>
+      <div class="card-body">
+        <table  class="table table-bordered table-hover table-sm table-striped">
+          <thead>
+            <tr class="d-flex">
+              <th class="col-3">Descripción</th>
+              <th class="col-2">Inicio</th>
+              <th class="col-2">Finalización</th>
+              <th class="col-2">Estado</th>
+              <th class="col-3">Opciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="d-flex" *ngFor="let s of ciclo |filter: filter | paginate: {  itemsPerPage: 10, currentPage: p }">
+              <td class="col-3">{{ s.description }}</td>
+              <td class="col-2">{{ s.start }}</td>
+              <td class="col-2">{{ s.end }}</td>
+              <td class="col-2">{{ s.state }}</td>
+              <td class="col-3 options">
+                <a  style="padding-right: 7px;" [routerLink]="['/human-resource/view']"><i class="fas fa-search-plus"></i></a>
+                <a style="padding-right: 7px;" [routerLink]="['/human-resource/edit']"><i class="fas fa-edit"></i> </a>
+                <a href="#"><i class="fas fa-trash-alt"></i></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card-footer text-muted pagination justify-content-end">
+        <pagination-controls
+                              (pageChange)="p = $event"
+                              maxSize="20"
+                              directionLinks="true"
+                              autoHide="true"
+                              responsive="true"
+                              previousLabel="Anterior"
+                              nextLabel="Siguiente"
+                              screenReaderPaginationLabel="Paginación"
+                              screenReaderPageLabel="Página"
+                              screenReaderCurrentLabel="Página">
+        </pagination-controls>
+      </div>
+    </div>
+  </div>
+</div>

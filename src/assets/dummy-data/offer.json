@@ -1,0 +1,16 @@
+[{
+  "uuid": "c618d4f2-e21b-4856-9dc8-400bd6abe877",
+  "level": "Secundaria",
+  "modality": "Escolarizado",
+  "turn": "Matutino"
+}, {
+  "uuid": "725b2381-1cb2-4452-8a17-bbd30c40e762",
+  "level": "Bachillerato",
+  "modality": "Escolarizado",
+  "turn": "Vespertino"
+}, {
+  "uuid": "7e307f15-0483-4134-80e1-31d9323fb9db",
+  "level": "Bachillerato",
+  "modality": "Escolarizado",
+  "turn": "Matutino"
+}]

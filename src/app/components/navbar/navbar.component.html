@@ -1,0 +1,54 @@
+<nav class="navbar shadow-sm navbar-expand-md  fixed-top ">
+      <a class="navbar-brand" href="/">
+        <img class="logo" src="assets/logo/logo_ivc-png.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/dashboard">Tablero</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/student">Estudiantes</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" routerLink="/teacher">Profesores</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/group">Grupos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/score">Calificaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/report">Reportes</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Reportes
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" routerLink="/report">Constancia</a>
+              <a class="dropdown-item" href="#">Boleta</a>
+              <a class="dropdown-item" href="#">Kardex</a>
+            </div>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Configuración
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" routerLink="/school">Plantel</a>
+              <a class="dropdown-item" routerLink="/period">Ciclo Escolar</a>
+              <a class="dropdown-item" routerLink="/academic-offer">Oferta Educativa</a>
+              <a class="dropdown-item" href="/human-resource">Recursos Humanos</a>
+
+            </div>
+          </li>
+        </ul>
+        <a class="nav-link my-2 my-sm-0 login" href="/login">Ingresa</a>
+        <a class="nav-link my-2 my-sm-0 logout" href="/">Salir</a>
+      </div>
+    </nav>

@@ -1,0 +1,31 @@
+[{
+  "uuid": "88bcd1db-d4df-4b10-a3e8-004c050e838b",
+  "start": "2019-09-13",
+  "end": "2018-01-25",
+  "state": "Activo",
+  "description": "Ciclo Escolar 2019"
+}, {
+  "uuid": "1b5a89a6-0ab5-4b95-a00b-55a663d196c6",
+  "start": "2018-07-22",
+  "end": "2017-01-28",
+  "state": "Inactivo",
+  "description": "Ciclo Escolar 2018"
+}, {
+  "uuid": "f4210b3c-c210-4ea1-a49c-826d31a8f41a",
+  "start": "2017-05-26",
+  "end": "2016-06-16",
+  "state": "Inactivo",
+  "description": "Ciclo Escolar 2017"
+}, {
+  "uuid": "c69c7943-34c3-4fbe-8253-b9514b0b9076",
+  "start": "2016-08-21",
+  "end": "2015-06-14",
+  "state": "Inactivo",
+  "description": "Ciclo Escolar 2016"
+}, {
+  "uuid": "f1df916d-f2fa-47e4-baa0-fd65e592fa24",
+  "start": "2015-07-15",
+  "end": "2014-08-06",
+  "state": "Inactivo",
+  "description": "Ciclo Escolar 2015"
+}]

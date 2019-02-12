@@ -1,0 +1,31 @@
+[{
+  "period": 2019,
+  "male": 154,
+  "female": 137,
+  "approved": 151,
+  "reprobate": 131,
+  "male_approved": 134,
+  "female_approved": 128,
+  "male_reprobate": 102,
+  "female_reprobate": 160
+}, {
+  "period": 2018,
+  "male": 141,
+  "female": 128,
+  "approved": 125,
+  "reprobate": 189,
+  "male_approved": 160,
+  "female_approved": 152,
+  "male_reprobate": 110,
+  "female_reprobate": 157
+}, {
+  "period": 2017,
+  "male": 109,
+  "female": 107,
+  "approved": 130,
+  "reprobate": 172,
+  "male_approved": 106,
+  "female_approved": 180,
+  "male_reprobate": 186,
+  "female_reprobate": 163
+}]
