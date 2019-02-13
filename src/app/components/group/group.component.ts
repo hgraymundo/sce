@@ -10,6 +10,8 @@ export class GroupComponent implements OnInit {
   group: any;
   title= "administración de grupos";
   title_new_button= "Nuevo grupo";
+  filter: String = '';
+  p: String;
   constructor() { }
 
   ngOnInit() {

@@ -9,6 +9,8 @@ import SampleJson  from '../../../assets/dummy-data/student.json';
 export class ReportComponent implements OnInit {
   student: any;
   title= "Administración de reportes";
+  filter: String = '';
+  p: String;
   constructor() { }
 
   ngOnInit() {

@@ -11,6 +11,8 @@ export class PeriodComponent implements OnInit {
   ciclo: any;
   title= "Administración de Ciclos Escolares";
   title_new_button= "Nuevo Ciclo Escolar";
+  filter: String = '';
+  p: String;
 
   constructor() { }
 

@@ -12,6 +12,8 @@ export class AcademicOfferComponent implements OnInit {
   title= "Administración de la oferta educativa";
   title_new_button= "Nueva oferta educativa";
   filter: String ='';
+  filter: String = '';
+  p: String;
 
   constructor() { }
 

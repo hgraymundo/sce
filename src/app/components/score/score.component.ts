@@ -10,6 +10,8 @@ import SampleJson  from '../../../assets/dummy-data/student.json';
 export class ScoreComponent implements OnInit {
   student: any;
   title= "Administración de calificaciones";
+  filter: String = '';
+  p: String;
 
   constructor() { }
 

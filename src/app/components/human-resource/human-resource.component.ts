@@ -11,6 +11,8 @@ export class HumanResourceComponent implements OnInit {
   personal: any;
   title= "Administración de Personal";
   title_new_button= "Nuevo Personal";
+  filter: String = '';
+  p: String;
 
   constructor() { }
 
