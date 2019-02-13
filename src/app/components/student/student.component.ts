@@ -10,7 +10,8 @@ export class StudentComponent implements OnInit {
   student: any;
   title= "Administración de estudiantes";
   title_new_button= "Nuevo estudiante";
-
+  filter: String = '';
+  p: String;
   constructor() { }
 
   ngOnInit() {

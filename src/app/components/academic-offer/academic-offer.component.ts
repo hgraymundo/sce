@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import SampleJson  from '../../../assets/dummy-data/offer.json';
-import { filter } from 'rxjs/operators';
 
 
 @Component({
@@ -12,6 +11,8 @@ export class AcademicOfferComponent implements OnInit {
   offer: any;
   title= "Administración de la oferta educativa";
   title_new_button= "Nueva oferta educativa";
+  filter: String ='';
+
   constructor() { }
 
   ngOnInit() {
