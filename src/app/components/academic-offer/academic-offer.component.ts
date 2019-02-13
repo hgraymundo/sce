@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import SampleJson  from '../../../assets/dummy-data/offer.json';
+import { filter } from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-academic-offer',
